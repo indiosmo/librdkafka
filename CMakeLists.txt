@@ -202,9 +202,6 @@ endif(WIN32)
 # * WITH_CRC32C_HW
 # * LINK_ATOMIC
 include("packaging/cmake/try_compile/rdkafka_setup.cmake")
-if(WITH_C11THREADS)
-  list(APPEND BUILT_WITH "C11THREADS")
-endif()
 if(WITH_CRC32C_HW)
   list(APPEND BUILT_WITH "CRC32C_HW")
 endif()
